@@ -1,3 +1,8 @@
 Pillow==9.4.0
 pre-commit-hooks
 pypdfium2==4.1.0
+codespell
+pylint
+bandit
+black
+
