@@ -25,3 +25,13 @@ repos:
         pass_filenames: false
         types: [text]
         verbose: true
+-   repo: https://github.com/pypa/pip-audit
+    rev: v2.5.3
+    hooks:
+      -   id: pip-audit
+          args: ["-r", "requirements.txt"]
+
+ci:
+  # Leave pip-audit to only run locally and not in CI
+  # pre-commit.ci does not allow network calls
+  skip: [pip-audit]
