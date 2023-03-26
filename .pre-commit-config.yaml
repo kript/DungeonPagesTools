@@ -1,3 +1,4 @@
+repos:
 -   repo: https://github.com/pre-commit/pre-commit-hooks
     rev: v4.4.0  # Use the ref you want to point at
     hooks:
@@ -9,6 +10,7 @@
     -   id: check-docstring-first
     -   id: check-case-conflict
     -   id: check-ast
+-   repo: local
     hooks:
     -   id: python-bandit-vulnerability-check
         entry: bandit
@@ -23,4 +25,3 @@
         pass_filenames: false
         types: [text]
         verbose: true
-
