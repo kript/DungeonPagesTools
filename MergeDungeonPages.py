@@ -10,7 +10,7 @@ import pypdfium2 as pdfium
 
 #you need to have libraries Pillow and Pypdfium2 installed. This is tested with Python 3.9.1 , pypdfium2 4.1.0, and pillow something or other
 
-#importing pdf - put your version of the game here. Your folder should have this script and the game pdf and nothing else because I'm doing everything in place because I don't really understand file handling very well. If you have *both* the core set and the yearlong set then I'd recommend amalgamating the pdfs before you start or amending this script. 
+#importing pdf - put your version of the game here. Your folder should have this script and the game pdf and nothing else because I'm doing everything in place because I don't really understand file handling very well. If you have *both* the core set and the yearlong set then I'd recommend amalgamating the pdfs before you start or amending this script.
 
 #if your pdf is called something different, change it below
 pdf = pdfium.PdfDocument("Dungeon Pages For Combining.pdf")
@@ -27,7 +27,7 @@ for page_number in range(n_pages):
 	)
 	character = bitmap.to_pil()
 	character.save(f"c{page_number+1}.png")
-	
+
 	bitmap = page.render(
 		scale = pngscale,
 		crop = (0, 0, 0, 292),
@@ -42,10 +42,10 @@ def merge(im1, im2):
 	h = im1.size[1] + im2.size[1]
 	im = Image.new("RGBA", (w,h), (255,255,255))
 	im.paste(im1, (0,0))
-	im.paste(im2, (0, 290*pngscale))	
+	im.paste(im2, (0, 290*pngscale))
 	return im
 
-#name all the characters and dungeons here for cutely named files. This is the core set and the first nine weeks of the yearlong set. You need to make sure the pages of the PDF are in the same order as this or your names will all come out wrong. If you *only* have the year long set, delete the first six names from each list; they're the core items. 
+#name all the characters and dungeons here for cutely named files. This is the core set and the first nine weeks of the yearlong set. You need to make sure the pages of the PDF are in the same order as this or your names will all come out wrong. If you *only* have the year long set, delete the first six names from each list; they're the core items.
 
 characters = ["Zafinn, Wandering Wizard", "Gloria, Avenging Warrior", "Sygrid, Northern Hunter", "Amador, Light Cleric", "Mira, Haunted Ranger", "Flynn, White Glove Knight", "Amador, Steam Cleric", "Sygrid, Vengeful Hunter", "Gloria, Virtuous Warrior", "Drok, Outcast Troll", "Mira, Brush Ranger", "Zafinn, Mischievous Wizard", "Flynn, Red Glove Knight", "Krete & Kreeg, Renowned Bards", "Amador, Woodward Cleric"]
 dungeons = ["Highmount Village", "Hellenburg", "Cliffdrop City", "Thorne Valley", "Reachport", "The Iron Peaks", "Havington", "Hogglebottom", "Whittleberry", "Bordertown", "Abyssal Plane", "Shan Tomb", "Capital City", "Stormshield", "The Hungry Isles"]
@@ -54,12 +54,11 @@ dungeons = ["Highmount Village", "Hellenburg", "Cliffdrop City", "Thorne Valley"
 
 for ii in range(n_pages):
 	for jj in range(n_pages):
-		
+
 		im1=Image.open(f"c{ii+1}.png")
 		im2=Image.open(f"d{jj+1}.png")
-		
+
 		dungeonpage = merge(im1, im2)
 		character = characters[ii]
 		dungeon = dungeons[jj]
-		dungeonpage.save(f"The Adventures of {character} in {dungeon}.png"  )	
-
+		dungeonpage.save(f"The Adventures of {character} in {dungeon}.png"  )
