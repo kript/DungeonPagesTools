@@ -54,5 +54,5 @@ DungeonPages_YLA_WK_013_ValensiAbyssWhisper_TearburnFields_032923.pdf \
 # run the combining tool
 python3 MergeDungeonPages.py
 # clear up the temporary files
-rm {c,d}*.png
+rm combined/{c,d}*.png
 ```
