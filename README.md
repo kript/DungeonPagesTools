@@ -50,5 +50,5 @@ DungeonPages_YLA_WK9_AmadorWoodwardCleric_TheHungryIsles_022523.pdf \
 # run the combining tool
 python3 MergeDungeonPages.py
 # clear up the temporary files
-rm {c,d}*.png
+rm combined/{c,d}*.png
 ```
