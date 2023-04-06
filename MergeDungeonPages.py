@@ -7,6 +7,7 @@ This is a script to take the pdf of the excellent print and play game Dungeon Pa
 
 from PIL import Image
 import pypdfium2 as pdfium
+import os
 
 # you need to have libraries Pillow and Pypdfium2 installed. This is tested with Python 3.9.1 , pypdfium2 4.1.0, and pillow something or other
 
@@ -17,6 +18,8 @@ pdf = pdfium.PdfDocument("Dungeon Pages For Combining.pdf")
 n_pages = len(pdf)
 pngscale = 3  # this makes it a good sort of size for iPad
 # and saving out as separate characters and dungeons
+path = 'combined'
+os.mkdir(path)
 for page_number in range(n_pages):
     page = pdf.get_page(page_number)
     # making the character and dungeon sections
@@ -26,14 +29,14 @@ for page_number in range(n_pages):
         crop=(0, 500, 0, 0),
     )
     character = bitmap.to_pil()
-    character.save(f"c{page_number+1}.png")
+    character.save(f"combined/c{page_number+1}.png")
 
     bitmap = page.render(
         scale=pngscale,
         crop=(0, 0, 0, 292),
     )
     dungeon = bitmap.to_pil()
-    dungeon.save(f"d{page_number+1}.png")
+    dungeon.save(f"combined/d{page_number+1}.png")
 
 # creating dungeon pages by mashing them together
 
@@ -65,6 +68,10 @@ characters = [
     "Flynn, Red Glove Knight",
     "Krete & Kreeg, Renowned Bards",
     "Amador, Woodward Cleric",
+    "Zafinn, Elemental Wizard",
+    "Sygrid, Banished Hunter",
+    "Gloria, Daredevil Warrior",
+    "Valensi, Abyss Whisper",
 ]
 dungeons = [
     "Highmount Village",
@@ -82,14 +89,18 @@ dungeons = [
     "Capital City",
     "Stormshield",
     "The Hungry Isles",
+    "Bakorio Province",
+    "Lariss",
+    "Filgan Forest",
+    "Tearburn Fields",
 ]
 
 # make all the pages
 
 for ii in range(n_pages):
     for jj in range(n_pages):
-        im1 = Image.open(f"c{ii+1}.png")
-        im2 = Image.open(f"d{jj+1}.png")
+        im1 = Image.open(f"combined/c{ii+1}.png")
+        im2 = Image.open(f"combined/d{jj+1}.png")
 
         dungeonpage = merge(im1, im2)
         character = characters[ii]
