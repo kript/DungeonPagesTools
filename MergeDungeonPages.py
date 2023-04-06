@@ -65,6 +65,10 @@ characters = [
     "Flynn, Red Glove Knight",
     "Krete & Kreeg, Renowned Bards",
     "Amador, Woodward Cleric",
+    "Zafinn, Elemental Wizard",
+    "Sygrid, Banished Hunter",
+    "Gloria, Daredevil Warrior",
+    "Valensi, Abyss Whisper",
 ]
 dungeons = [
     "Highmount Village",
@@ -82,6 +86,10 @@ dungeons = [
     "Capital City",
     "Stormshield",
     "The Hungry Isles",
+    "Bakorio Province",
+    "Lariss",
+    "Filgan Forest",
+    "Tearburn Fields",
 ]
 
 # make all the pages
