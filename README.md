@@ -36,16 +36,20 @@ It will take a single PDF of all the Core Set and  Year Long Adventures (up to t
 sudo apt install qpdf
 # merge PDF files to get a file for the above tool
 qpdf --empty --pages \
-DungeonPages_CoreSet_v1.01_010723.pdf \
-DungeonPages_YLA_WK1_AmadorSteamCleric_Havington_011223.pdf \
-DungeonPages_YLA_WK2_SygridVengefulHunter_Hogglebottom_011223.pdf \
-DungeonPages_YLA_WK3_GloriaVirtuousWarrior_Whittleberry_011823.pdf \
-DungeonPages_YLA_WK4_DrokOutcastTroll_Bordertown_012523.pdf \
-DungeonPages_YLA_WK5_ZafinnMischievousWizard_ShanTomb_013123.pdf \
-DungeonPages_YLA_WK6_MiraBrushRanger_AbyssalPlane_020223.pdf \
-DungeonPages_YLA_WK7_RedGloveKnight_CapitalCity_021623.pdf \
-DungeonPages_YLA_WK8_KreteKreeg_Stormshield_022323.pdf \
-DungeonPages_YLA_WK9_AmadorWoodwardCleric_TheHungryIsles_022523.pdf \
+DungeonPages_CoreSet_011223.pdf \
+DungeonPages_YLA_WK_01_AmadorSteamCleric_Havington_011223.pdf \
+DungeonPages_YLA_WK_02_SygridVengefulHunter_Hogglebottom_011223.pdf \
+DungeonPages_YLA_WK_03_GloriaVirtuousWarrior_Whittleberry_011823.pdf \
+DungeonPages_YLA_WK_04_DrokOutcastTroll_Bordertown_012523.pdf \
+DungeonPages_YLA_WK_05_ZafinnMischievousWizard_ShanTomb_013123.pdf \
+DungeonPages_YLA_WK_06_MiraBrushRanger_AbyssalPlane_020223.pdf \
+DungeonPages_YLA_WK_07_RedGloveKnight_CapitalCity_021623.pdf \
+DungeonPages_YLA_WK_08_KreteKreeg_Stormshield_022323.pdf \
+DungeonPages_YLA_WK_09_AmadorWoodwardCleric_TheHungryIsles_022523.pdf \
+DungeonPages_YLA_WK_010_ZafinnElementalWizard_BakorioProvince_030823.pdf \
+DungeonPages_YLA_WK_011_SygridBanishedHunter_Lariss_031623.pdf \
+DungeonPages_YLA_WK_012_GloriaDaredevilWarrior_FilganForest_032323.pdf \
+DungeonPages_YLA_WK_013_ValensiAbyssWhisper_Tearburn Fields_032923.pdf \
 -- "Dungeon Pages For Combining.pdf"
 # run the combining tool
 python3 MergeDungeonPages.py
