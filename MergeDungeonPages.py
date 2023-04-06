@@ -105,4 +105,4 @@ for ii in range(n_pages):
         dungeonpage = merge(im1, im2)
         character = characters[ii]
         dungeon = dungeons[jj]
-        dungeonpage.save(f"The Adventures of {character} in {dungeon}.png")
+        dungeonpage.save(f"combined/The Adventures of {character} in {dungeon}.png")
