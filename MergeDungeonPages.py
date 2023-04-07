@@ -72,6 +72,7 @@ characters = [
     "Sygrid, Banished Hunter",
     "Gloria, Daredevil Warrior",
     "Valensi, Abyss Whisper",
+    "Mira, Lawless Ranger",
 ]
 dungeons = [
     "Highmount Village",
@@ -93,6 +94,7 @@ dungeons = [
     "Lariss",
     "Filgan Forest",
     "Tearburn Fields",
+    "Sunset Quarter",
 ]
 
 # make all the pages
