@@ -49,7 +49,7 @@ DungeonPages_YLA_WK_09_AmadorWoodwardCleric_TheHungryIsles_022523.pdf \
 DungeonPages_YLA_WK_010_ZafinnElementalWizard_BakorioProvince_030823.pdf \
 DungeonPages_YLA_WK_011_SygridBanishedHunter_Lariss_031623.pdf \
 DungeonPages_YLA_WK_012_GloriaDaredevilWarrior_FilganForest_032323.pdf \
-'DungeonPages_YLA_WK_013_ValensiAbyssWhisper_Tearburn Fields_032923.pdf' \
+DungeonPages_YLA_WK_013_ValensiAbyssWhisper_Tearburn Fields_032923.pdf' \
 DungeonPages_YLA_WK_014_MiraLawlessRanger_SunsetQuarter_040723.pdf \
 -- "Dungeon Pages For Combining.pdf"
 # run the combining tool
