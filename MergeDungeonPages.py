@@ -73,6 +73,7 @@ characters = [
     "Gloria, Daredevil Warrior",
     "Valensi, Abyss Whisper",
     "Mira, Lawless Ranger",
+    "Flynn, Blue Glove",
 ]
 dungeons = [
     "Highmount Village",
@@ -95,6 +96,7 @@ dungeons = [
     "Filgan Forest",
     "Tearburn Fields",
     "Sunset Quarter",
+    "Aquira",
 ]
 
 # make all the pages
