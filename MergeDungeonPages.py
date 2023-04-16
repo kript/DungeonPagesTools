@@ -73,7 +73,7 @@ characters = [
     "Gloria, Daredevil Warrior",
     "Valensi, Abyss Whisper",
     "Mira, Lawless Ranger",
-    "Flynn, Blue Glove",
+    "Flynn, Blue Glove Knight",
 ]
 dungeons = [
     "Highmount Village",
