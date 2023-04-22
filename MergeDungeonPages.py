@@ -74,6 +74,7 @@ characters = [
     "Valensi, Abyss Whisper",
     "Mira, Lawless Ranger",
     "Flynn, Blue Glove Knight",
+    "Drok, Adventurous Troll",
 ]
 dungeons = [
     "Highmount Village",
@@ -97,6 +98,7 @@ dungeons = [
     "Tearburn Fields",
     "Sunset Quarter",
     "Aquira",
+    "Chundar Village",
 ]
 
 # make all the pages
