@@ -5,4 +5,4 @@ Pillow==9.4.0
 pip-audit
 pre-commit-hooks
 pylint
-pypdfium2==4.3.0
+pypdfium2==4.7.0
