@@ -34,6 +34,13 @@ It will take a single PDF of all the Core Set and  Year Long Adventures (up to t
 ```bash
 # Install qpdf
 sudo apt install qpdf
+# setup python virtual environment
+mkdir -p ~/code/venvs/DungeonPages
+python3 -m venv ~/code/venvs/DungeonPages
+source ~/code/venvs/DungeonPages/bin/activate
+pip install -r requirements.txt
+# clear up any previous runs
+rm -r combined/
 # merge PDF files to get a file for the above tool
 qpdf --empty --pages \
 DungeonPages_CoreSet_011223.pdf \
@@ -53,6 +60,9 @@ DungeonPages_YLA_WK_012_GloriaDaredevilWarrior_FilganForest_032323.pdf \
 DungeonPages_YLA_WK_014_MiraLawlessRanger_SunsetQuarter_040723.pdf \
 DungeonPages_YLA_WK_015_FlynnBlueGlove_Aquira_041423.pdf \
 DungeonPages_YLA_WK_016_DrokAdventurousTroll_ChundarVillage_042023.pdf \
+DungeonPages_YLA_WK_017_KreteKreegQuestingBards_BelgorMountain_042523.pdf \
+DungeonPages_YLA_WK_018_ZafinnBrashWizard_ThatchWood_042823.pdf \
+DungeonPages_YLA_WK_019_HarosValiantMonk_Alglen_051123.pdf \
 -- "Dungeon Pages For Combining.pdf"
 # run the combining tool
 python3 MergeDungeonPages.py
