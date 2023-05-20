@@ -78,6 +78,7 @@ characters = [
     "Krete & Kreeg, Questing Bards",
     "Zafinn, Brash Wizard",
     "Hardos, Valiant Monk",
+    "Valensi, Spirit Whisper",
 ]
 dungeons = [
     "Highmount Village",
@@ -105,6 +106,7 @@ dungeons = [
     "Belgor Mountain",
     "Thatchwood",
     "Alglen",
+    "Greatbridge",
 ]
 
 # make all the pages
