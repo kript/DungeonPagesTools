@@ -63,6 +63,8 @@ DungeonPages_YLA_WK_016_DrokAdventurousTroll_ChundarVillage_042023.pdf \
 DungeonPages_YLA_WK_017_KreteKreegQuestingBards_BelgorMountain_042523.pdf \
 DungeonPages_YLA_WK_018_ZafinnBrashWizard_ThatchWood_042823.pdf \
 DungeonPages_YLA_WK_019_HarosValiantMonk_Alglen_051123.pdf \
+DungeonPages_YLA_WK_020_ValensiSpiritWhisper_Greatbridge_051523.pdf \
+DungeonPages_YLA_WK_021_SygridOrphanedHunter_Dowlor_052323.pdf \
 -- "Dungeon Pages For Combining.pdf"
 # run the combining tool
 python3 MergeDungeonPages.py
