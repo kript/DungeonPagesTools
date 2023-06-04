@@ -80,6 +80,7 @@ characters = [
     "Hardos, Valiant Monk",
     "Valensi, Spirit Whisper",
     "Sygrid, Orphaned Hunter",
+    "Gloria, Night Warrior",
 ]
 dungeons = [
     "Highmount Village",
@@ -109,6 +110,7 @@ dungeons = [
     "Alglen",
     "Greatbridge",
     "Dowlor",
+    "The Coils",
 ]
 
 # make all the pages
