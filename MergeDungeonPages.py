@@ -80,6 +80,7 @@ characters = [
     "Hardos, Valiant Monk",
     "Valensi, Spirit Whisper",
     "Sygrid, Orphaned Hunter",
+    "Amador, Martial Cleric",
     "Gloria, Night Warrior",
 ]
 dungeons = [
@@ -110,6 +111,7 @@ dungeons = [
     "Alglen",
     "Greatbridge",
     "Dowlor",
+    "Eldrin",
     "The Coils",
 ]
 
