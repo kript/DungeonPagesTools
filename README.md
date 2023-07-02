@@ -69,6 +69,7 @@ DungeonPages_YLA_WK_023_AmadorMartialCleric_Eldrin_060923 copy.pdf \
 DungeonPages_YLA_WK_022_GloriaNightWarrior_TheCoils_053123.pdf \
 DungeonPages_YLA_WK_024_MarianDeviousSpirit_PuffbagTown_061523.pdf \
 DungeonPages_YLA_WK_025_MiraSkyRanger_TunnelsOfDreadmarsh_062023.pdf \
+DungeonPages_YLA_WK_026_DrokChampionTroll_TitanCarcass_061523.pdf \
 -- "Dungeon Pages For Combining.pdf"
 # run the combining tool
 python3 MergeDungeonPages.py
