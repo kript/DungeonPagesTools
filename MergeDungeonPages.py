@@ -84,6 +84,7 @@ characters = [
     "Gloria, Night Warrior",
     "Marian, Devious Spirit",
     "Mira, Sky Ranger",
+    "Flynn, Black Glove",
 ]
 dungeons = [
     "Highmount Village",
@@ -117,6 +118,7 @@ dungeons = [
     "The Coils",
     "Puffbag Town",
     "Tunnels of Dreadmarsh",
+    "Meredrin",
 ]
 
 # make all the pages
