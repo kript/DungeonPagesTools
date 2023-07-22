@@ -84,6 +84,7 @@ characters = [
     "Gloria, Night Warrior",
     "Marian, Devious Spirit",
     "Mira, Sky Ranger",
+    "Krete And Kreeg, Notorious Bards",
     "Flynn, Black Glove",
 ]
 dungeons = [
@@ -118,6 +119,7 @@ dungeons = [
     "The Coils",
     "Puffbag Town",
     "Tunnels of Dreadmarsh",
+    "Crescent City",
     "Meredrin",
 ]
 
