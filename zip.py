@@ -8,6 +8,7 @@ import zipfile
 import re
 import pprint
 
+
 def adventure_zip_file_info(adventurefile):
     """
     Get the list of files in an Year Long Adventure zip
@@ -25,7 +26,7 @@ def adventure_zip_file_info(adventurefile):
     """
     with zipfile.ZipFile(adventurefile, mode="r") as archive:
         file_list = archive.namelist()
-        #items = archive.infolist()
+        # items = archive.infolist()
     dungeon = {}
     for file in file_list:
         # ignore the zip artefacts of being created on OSX
@@ -42,15 +43,16 @@ def adventure_zip_file_info(adventurefile):
             # so make them human readable
             # thanks to stack exchange for the regex- https://stackoverflow.com/a/2279177
             adventurer_readable = re.sub(r"([A-Z])", r" \1", adventurer).lstrip()
-            location_readable =  re.sub(r"([A-Z])", r" \1", location).lstrip()
+            location_readable = re.sub(r"([A-Z])", r" \1", location).lstrip()
             # create a dictionary entry for each file
             dungeon[file] = {
                 "adventurer": adventurer,
                 "adventurers name": adventurer_readable,
                 "location": location,
                 "location name": location_readable,
-                }
+            }
     return dungeon
+
 
 def main():
     """
@@ -60,6 +62,7 @@ def main():
     printer = pprint.PrettyPrinter(indent=4)
     dungeon = adventure_zip_file_info(adventure)
     printer.pprint(dungeon)
+
 
 if __name__ == "__main__":
     main()
