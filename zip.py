@@ -1,7 +1,12 @@
 #!/usr/bin/python3
+"""
+Module to manage information from the zip files for the Dungeon Pages Year Long Adventure.
+
+"""
 
 import zipfile
 import re
+import pprint
 
 def adventure_zip_file_info(adventurefile):
     """
@@ -19,10 +24,10 @@ def adventure_zip_file_info(adventurefile):
     },
     """
     with zipfile.ZipFile(adventurefile, mode="r") as archive:
-        list = archive.namelist()
+        file_list = archive.namelist()
         #items = archive.infolist()
     dungeon = {}
-    for file in list:
+    for file in file_list:
         # ignore the zip artefacts of being created on OSX
         if file.startswith("__MACOSX"):
             continue
@@ -45,17 +50,16 @@ def adventure_zip_file_info(adventurefile):
                 "location": location,
                 "location name": location_readable,
                 }
-    return(dungeon)
+    return dungeon
 
 def main():
     """
     for future unit tests, the ability to run this module standalone
     """
     adventure = "Year-long Adventure_071423.zip"
-    import pprint
-    pp = pprint.PrettyPrinter(indent=4)
+    printer = pprint.PrettyPrinter(indent=4)
     dungeon = adventure_zip_file_info(adventure)
-    pp.pprint(dungeon)
+    printer.pprint(dungeon)
 
 if __name__ == "__main__":
     main()
