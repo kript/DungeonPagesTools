@@ -71,6 +71,9 @@ DungeonPages_YLA_WK_024_MarianDeviousSpirit_PuffbagTown_061523.pdf \
 DungeonPages_YLA_WK_025_MiraSkyRanger_TunnelsOfDreadmarsh_062023.pdf \
 DungeonPages_YLA_WK027_FlynnBlackGlove_Meredrin_070623.pdf \
 DungeonPages_YLA_WK_028_KreteAndKreegNotoriousBards_CrescentCity_071023.pdf \
+DungeonPages_YLA_WK_29_FinleyImpulsiveCavalier_HellenburgClocktower_071823.pdf \
+DungeonPages_YLA_WK_30_ValensiCunningWhisper_BakorioCityRuins_072823.pdf \
+DungeonPages_YLA_WK_31_ZafinnMortalWizard_SphinxFortress_080323.pdf \
 -- "Dungeon Pages For Combining.pdf"
 # run the combining tool
 python3 MergeDungeonPages.py
