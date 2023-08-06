@@ -86,6 +86,9 @@ characters = [
     "Mira, Sky Ranger",
     "Krete And Kreeg, Notorious Bards",
     "Flynn, Black Glove",
+    "Finley,Impulsive Cavalier",
+    "Valensi, Cunning Whisper",
+    "Zafinn, Mortal Wizard",
 ]
 dungeons = [
     "Highmount Village",
@@ -121,6 +124,9 @@ dungeons = [
     "Tunnels of Dreadmarsh",
     "Crescent City",
     "Meredrin",
+    "Hellenburg Clocktower",
+    "Bakorio City Ruins",
+    "Sphinx Fortress",
 ]
 
 # make all the pages
