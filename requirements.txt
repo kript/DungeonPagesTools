@@ -7,3 +7,4 @@ pre-commit-hooks
 pylint
 pypdfium2==4.18.0
 pytest
+pytest-cov
