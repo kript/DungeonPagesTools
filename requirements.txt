@@ -5,6 +5,6 @@ Pillow>=10.0.1
 pip-audit
 pre-commit-hooks
 pylint
-pypdfium2==5.1.0
+pypdfium2==5.3.0
 pytest
 pytest-cov
