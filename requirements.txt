@@ -1,7 +1,7 @@
 bandit
 black
 codespell
-Pillow>=12.2.0
+Pillow>=12.3.0
 pip-audit
 pre-commit-hooks
 pylint
