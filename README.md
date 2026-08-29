@@ -28,6 +28,7 @@ Thanks to BohemianCoast who submitted this [pastbin script](https://pastebin.com
 > importing pdf - put your version of the game here. Your folder should have this script and the game pdf and nothing else because I'm doing everything in place because I don't really understand file handling very well. If you have *both* the core set and the yearlong set then I'd recommend amalgamating the pdfs before you start or amending this script.
 
 It will take a single PDF of all the Core Set and  Year Long Adventures (up to the first nine weeks)  combined, in a file called  "Dungeon Pages For Combining.pdf", and generate a new set of PNG files in the same directory called "The Adventures of {character} in {dungeon}.png"  which is optimised for an iPad.
+There is one step you have to do manually, which is to rename the PDF "DungeonPages_YLA_WK_013_ValensiAbyssWhisper_Tearburn Fields_032923.pdf" to "DungeonPages_YLA_WK_013_ValensiAbyssWhisper_TearburnFields_032923.pdf". This step is required only the first time, as the PDF is misnamed and does not respect the traditional nomenclature of the other sheets.
 
 ### Creating a Single PDF file (Ubuntu Linux)
 
@@ -56,7 +57,7 @@ DungeonPages_YLA_WK_09_AmadorWoodwardCleric_TheHungryIsles_022523.pdf \
 DungeonPages_YLA_WK_010_ZafinnElementalWizard_BakorioProvince_030823.pdf \
 DungeonPages_YLA_WK_011_SygridBanishedHunter_Lariss_031623.pdf \
 DungeonPages_YLA_WK_012_GloriaDaredevilWarrior_FilganForest_032323.pdf \
-'DungeonPages_YLA_WK_013_ValensiAbyssWhisper_Tearburn Fields_032923.pdf' \
+DungeonPages_YLA_WK_013_ValensiAbyssWhisper_TearburnFields_032923.pdf \
 DungeonPages_YLA_WK_014_MiraLawlessRanger_SunsetQuarter_040723.pdf \
 DungeonPages_YLA_WK_015_FlynnBlueGlove_Aquira_041423.pdf \
 DungeonPages_YLA_WK_016_DrokAdventurousTroll_ChundarVillage_042023.pdf \
